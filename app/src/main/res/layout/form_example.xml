@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:orientation="vertical"
+    android:padding="16dp"
+        android:weightSum="1">
+
+    <TextView
+        android:id="@+id/contact_form_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="5dp"
+        android:text="Science Ambassadors Application"
+        android:textColor="#1111ff"
+        android:textSize="20sp"
+        android:typeface="serif" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:id="@+id/Name" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:contextClickable="false">
+
+        <CheckBox android:id="@+id/checkbox_male"
+            android:layout_width="100dp"
+            android:layout_height="36dp"
+            android:text="@string/Male"
+            android:onClick="onCheckboxClicked"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="75dp"
+            android:layout_marginRight="25dp" />
+
+        <CheckBox android:id="@+id/checkbox_female"
+            android:layout_width="100dp"
+            android:layout_height="36dp"
+            android:text="@string/Female"
+            android:onClick="onCheckboxClicked"
+            android:layout_gravity="center_vertical" />
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:hint="@string/Address"
+        android:inputType="text"
+        android:id="@+id/Address" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:hint="City, State, Zip"
+        android:inputType="text"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/CityStateZip" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:hint="School"
+            android:inputType="text"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/School" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:hint="@string/year_in_school"
+            android:inputType="text"
+            android:id="@+id/YearSchool"
+            android:layout_marginBottom="10dp" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:hint="@string/home_phone"
+            android:inputType="textPhonetic|number"
+            android:id="@+id/HomePhone"
+            android:layout_marginBottom="10dp" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:hint="@string/cell_phone"
+            android:inputType="textPhonetic|number"
+            android:id="@+id/CellPhone"
+            android:layout_marginBottom="10dp" />
+
+        <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/Email" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Have you previously applied to be a mentor in this program?"
+            android:textColor="?attr/editTextColor"
+            android:background="?attr/editTextBackground"
+            android:gravity="center_vertical"
+            android:textAppearance="?android:attr/textAppearanceMediumInverse"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/PreviousMentor" />
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+            <CheckBox android:id="@+id/checkbox_yes"
+            android:layout_width="100dp"
+            android:layout_height="36dp"
+            android:text="@string/Yes"
+            android:onClick="onCheckboxClicked"
+            android:layout_gravity="center_vertical"
+                android:layout_marginLeft="75dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="10dp"/>
+
+        <CheckBox android:id="@+id/checkbox_no"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="@string/No"
+            android:onClick="onCheckboxClicked"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="10dp"/>
+
+    </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Did you participate as a 5th grader 'mentee' in this program?"
+            android:textColor="?attr/editTextColor"
+            android:background="?attr/editTextBackground"
+            android:gravity="center_vertical"
+            android:textAppearance="?android:attr/textAppearanceMediumInverse"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/PreviousMentee" />
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <CheckBox android:id="@+id/checkbox_yes"
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:text="@string/Yes"
+                android:onClick="onCheckboxClicked"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="75dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="10dp"/>
+
+            <CheckBox android:id="@+id/checkbox_no"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="@string/No"
+                android:onClick="onCheckboxClicked"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="10dp"/>
+
+        </LinearLayout>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:gravity="top"
+        android:hint="What area of science interests you the most?"
+        android:fitsSystemWindows="true"
+        android:breakStrategy="balanced"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        android:padding="5dp"
+        android:id="@+id/ScienceInterest"
+        android:layout_weight="0.01" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:gravity="top"
+            android:hint="Describe a memorable science experience you have had in the past (ie., at OMSI or the Zoo, on a family vacation, at camp, at school, etc.) What did you especially like about it?"
+            android:fitsSystemWindows="true"
+            android:breakStrategy="balanced"
+            android:inputType="textMultiLine"
+            android:singleLine="false"
+            android:padding="5dp"
+            android:layout_weight="0.07"
+            android:id="@+id/ScienceExperience" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:gravity="top"
+            android:hint="What do you hope to gain from participating in the Science Ambassadors program (i.e. what are your goals for your participation in this program)?"
+            android:fitsSystemWindows="true"
+            android:breakStrategy="balanced"
+            android:inputType="textMultiLine"
+            android:singleLine="false"
+            android:padding="5dp"
+            android:layout_weight="0.08"
+            android:id="@+id/ParticipationGoal" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:gravity="top"
+            android:hint="What knowledge, skills, and/or abilities will you bring to the program (include IT skills, artisitic abilities, photography, organizational skills, etc.)?"
+            android:fitsSystemWindows="true"
+            android:breakStrategy="balanced"
+            android:inputType="textMultiLine"
+            android:singleLine="false"
+            android:padding="5dp"
+            android:layout_weight="0.08"
+            android:id="@+id/SkillsAbilities" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:gravity="top"
+            android:hint="What personal habits/qualities might you need to modify in order to contribute positively to the Science Ambassadors program (i.e. shyness, tardiness, etc.), and how do you propose to address these issues?"
+            android:fitsSystemWindows="true"
+            android:breakStrategy="balanced"
+            android:inputType="textMultiLine"
+            android:singleLine="false"
+            android:padding="5dp"
+            android:layout_weight="0.08"
+            android:id="@+id/BadHabits" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:gravity="top"
+            android:hint="Describe your past leadership experiences. Have any of these been with younger students?"
+            android:fitsSystemWindows="true"
+            android:breakStrategy="balanced"
+            android:inputType="textMultiLine"
+            android:singleLine="false"
+            android:padding="5dp"
+            android:layout_weight="0.08"
+            android:id="@+id/LeadershipExperience" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:gravity="top"
+            android:hint="What extracurriculur activities do you plan to participate in during the 2017-2018 school year?"
+            android:fitsSystemWindows="true"
+            android:breakStrategy="balanced"
+            android:inputType="textMultiLine"
+            android:singleLine="false"
+            android:padding="5dp"
+            android:layout_weight="0.08"
+            android:id="@+id/Extracurriculur" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:gravity="top"
+            android:hint="If a conflict arises in your schedule, please describe below how you will resolve it so that your commitment to Science Ambassadors is apprpriately prioritized (include studying for exams, etc.)."
+            android:fitsSystemWindows="true"
+            android:breakStrategy="balanced"
+            android:inputType="textMultiLine"
+            android:singleLine="false"
+            android:padding="5dp"
+            android:layout_weight="0.08"
+            android:id="@+id/editText2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="All participants will receive a tee-shirt. So that we can proceed with the order in a timely way, please check your (adult) tee-shirt size"
+            android:textColor="?attr/editTextColor"
+            android:background="?attr/editTextBackground"
+            android:gravity="center_vertical"
+            android:textAppearance="?android:attr/textAppearanceMediumInverse"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/ShirtSize" />
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+            <CheckBox
+                android:id="@+id/Small"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/Small"
+                android:onClick="onCheckboxClicked"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:hint="Small" />
+
+            <CheckBox
+                android:id="@+id/Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/Medium"
+                android:onClick="onCheckboxClicked"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:hint="Medium" />
+
+            <CheckBox
+                android:id="@+id/Large"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/Large"
+                android:onClick="onCheckboxClicked"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:hint="Large" />
+
+            <CheckBox
+                android:id="@+id/X_Large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/X_Large"
+                android:onClick="onCheckboxClicked"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:hint="X-Large" />
+
+        </LinearLayout>
+
+        <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorPrimaryDark"
+        android:elevation="4dp"
+        android:paddingLeft="70dp"
+        android:paddingRight="70dp"
+        android:text="Submit"
+        android:textColor="#fff" />
+</LinearLayout>
+</ScrollView>

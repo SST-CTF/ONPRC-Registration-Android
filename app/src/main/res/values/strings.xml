@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Registration</string>
+    <string name="Address">Address</string>
+    <string name="Female">Female</string>
+    <string name="Male">Male</string>
+    <string name="Yes">Yes</string>
+    <string name="No">No</string>
+    <string name="year_in_school">Year in School</string>
+    <string name="home_phone">Home Phone</string>
+    <string name="cell_phone">Cell Phone</string>
+    <string name="Small">Small</string>
+    <string name="Medium">Medium</string>
+    <string name="Large">Large</string>
+    <string name="X_Large">X-Large</string>
+</resources>
